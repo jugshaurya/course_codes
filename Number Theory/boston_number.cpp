@@ -13,14 +13,14 @@ int main() {
     int num;
     cin>>num;
 
-    int n =num;
+    int n = num;
     int sum = 0;
     while(n>0){
         sum += n%10;
         n/=10;
     }
     n = num;
-    // cout<<sum;
+
     bool primes[MAX];
     for(int i=0;i<=MAX;i++){
         primes[i] = true;
@@ -42,7 +42,7 @@ int main() {
             while(n>0 && i<num && (n % i == 0)){
                 int add = i;
                 while(add>0){
-                    sum_divisor += add%10;
+                    sum_divisor += add % 10;
                     add /= 10;
                 }
                 n /= i; 

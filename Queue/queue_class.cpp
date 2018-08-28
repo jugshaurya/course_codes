@@ -21,7 +21,7 @@ public:
 	queue();//constructor
 	void push(int data);
 	void pop();
-	int top() const;
+	int front() const;
 	int size() const;
 	bool empty() const;
 	~queue();
@@ -75,7 +75,7 @@ void queue::pop(){
 	sze--;
 }
 
-int queue::top() const{
+int queue::front() const{
     if(head==NULL){
         return -1;
     }
@@ -96,9 +96,9 @@ int main(){
 	q.push(7);
 	q.push(6);
 	q.push(716);
-	cout<<q.top()<<endl;
+	cout<<q.front()<<endl;
 	q.pop();
-	cout<<q.top()<<endl;
+	cout<<q.front()<<endl;
 	cout<<q.size()<<endl;
 	cout<<q.empty()<<endl;
 }
