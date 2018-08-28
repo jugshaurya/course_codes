@@ -1,3 +1,6 @@
+
+//inplicit stack --> recursion
+//explicict stack -->  stack class 
 #include<iostream>
 #include<stack>
 using namespace std;

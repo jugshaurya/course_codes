@@ -38,7 +38,6 @@ bool isBalanaceParen(string str){
 	return s.empty();
 }
 
-
 int main(){
 
 	string str = "[{a-(b+c)} - {d*(e+f)}]";
